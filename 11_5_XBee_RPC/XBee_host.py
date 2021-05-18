@@ -66,7 +66,7 @@ while True:
     s.write("/myled1/write 0\r".encode())
     time.sleep(1)
     
-    s.write("/getAcc/run\r".encode())
+    s.write("/getAcc/run\n\r".encode())
     time.sleep(3)
 
 s.close()
